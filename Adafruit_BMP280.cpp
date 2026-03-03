@@ -39,12 +39,12 @@ Adafruit_BMP280::Adafruit_BMP280(TwoWire *theWire) {
  * @param  theSPI
  *         optional SPI object
  */
-Adafruit_BMP280::Adafruit_BMP280(int8_t cspin, SPIClass *theSPI) {
-  spi_dev = new Adafruit_SPIDevice(cspin, 1000000, SPI_BITORDER_MSBFIRST,
-                                   SPI_MODE0, theSPI);
-  temp_sensor = new Adafruit_BMP280_Temp(this);
-  pressure_sensor = new Adafruit_BMP280_Pressure(this);
-}
+// Adafruit_BMP280::Adafruit_BMP280(int8_t cspin, SPIClass *theSPI) {
+//   spi_dev = new Adafruit_SPIDevice(cspin, 1000000, SPI_BITORDER_MSBFIRST,
+//                                    SPI_MODE0, theSPI);
+//   temp_sensor = new Adafruit_BMP280_Temp(this);
+//   pressure_sensor = new Adafruit_BMP280_Pressure(this);
+// }
 
 /*!
  * @brief  BMP280 constructor using bitbang SPI

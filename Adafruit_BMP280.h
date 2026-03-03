@@ -180,7 +180,7 @@ public:
   };
 
   Adafruit_BMP280(TwoWire *theWire = &Wire);
-  Adafruit_BMP280(int8_t cspin, SPIClass *theSPI = &SPI);
+  // Adafruit_BMP280(int8_t cspin, SPIClass *theSPI = &SPI);
   Adafruit_BMP280(int8_t cspin, int8_t mosipin, int8_t misopin, int8_t sckpin);
   ~Adafruit_BMP280(void);
 
